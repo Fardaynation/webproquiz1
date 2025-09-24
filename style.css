@@ -42,6 +42,7 @@ body.dark-mode {
 body.dark-mode header,
 body.dark-mode main,
 body.dark-mode footer {
-  color: inherit;
+  background-color: #1e1e1e;
+  color: #cccccc;
 }
 footer p { margin: 0.25rem 0; font-size: 0.9rem; }
