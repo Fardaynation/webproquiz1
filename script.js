@@ -13,15 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
       console.warn("No <footer> element found.");
     }
 
-    const btn = document.getElementById("darkModeBtn");
-    if (btn) {
-        document.body.classList.toggle("dark-mode");
-        console.log("Dark mode toggled:", document.body.classList.contains("dark-mode"));
-      });
-      console.log("Dark mode button listener attached");
-    } else {
-      console.warn("No element with id 'darkModeBtn' found.");
-    }
+const btn = document.getElementById("darkModeBtn");
+if (btn) {
+  btn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+    console.log("Dark mode toggled:", document.body.classList.contains("dark-mode"));
+  });
+  console.log("Dark mode button listener attached");
+} else {
+  console.warn("No element with id 'darkModeBtn' found.");
+}
+
 
   } catch (err) {
     console.error("Error in script.js:", err);
